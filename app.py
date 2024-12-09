@@ -14,7 +14,6 @@ with open('style.css') as f:
 st.logo(
     "assets/logo_infancia_segura.svg",
     icon_image="assets/icon_logo_infancia_segura.svg",
-    size="large"
 )
 
 pages = {
