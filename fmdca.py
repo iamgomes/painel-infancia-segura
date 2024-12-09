@@ -4,17 +4,15 @@ from funcoes_graficos import *
 
 st.title("🏛️ Distribuição espacial e proporcional dos Fundos Municipais de Direitos da Criança e do Adolescente (FMDCA) - 2024")
 
+df_fmdca['Prop_Mun_FMCA_Tt_Mun'] = df_fmdca['Prop_Mun_FMCA_Tt_Mun'].replace(',', '')
+df_fmdca["Proporção de Municípios com FMDCA (%)"] = df_fmdca["Prop_Mun_FMCA_Tt_Mun"] * 100
 
-df_fmdca['Prop_Mun_FMCA_Tt_Mun'] = pd.to_numeric(df_fmdca['Prop_Mun_FMCA_Tt_Mun'])
-df_fmdca['Prop_Mun_FMCA_Tt_Mun'] = (df_fmdca['Prop_Mun_FMCA_Tt_Mun'] * 100)#.apply(lambda x: f"{x:.1f} %")
-
-df_fmdca = df_fmdca[['UF', 'Estado', 'Qtd_mun_COM_FMCA', 'Qtd_Municipios', 'Prop_Mun_FMCA_Tt_Mun']]
+df_fmdca = df_fmdca[['UF', 'Estado', 'Qtd_mun_COM_FMCA', 'Qtd_Municipios', 'Proporção de Municípios com FMDCA (%)']]
 
 # Alterando os nomes das colunas
 df_fmdca = df_fmdca.rename(columns={
     'Qtd_mun_COM_FMCA': 'Total de FMDCA',
     'Qtd_Municipios': 'Total de Municípios',
-    'Prop_Mun_FMCA_Tt_Mun': 'Proporção de Municípios com FMDCA'
 })
 
 uf_selecao = st.sidebar.selectbox(
@@ -33,7 +31,7 @@ fig_mapa = px.choropleth(
     geojson=geojson_url,
     locations="UF",
     featureidkey="properties.sigla",  # Códigos ISO no GeoJSON
-    color="Proporção de Municípios com FMDCA",
+    color="Proporção de Municípios com FMDCA (%)",
     color_continuous_scale=[(0, cinza), (0.5, amarelo), (1, laranja)],  # Degradê verde -> amarelo -> vermelho
 )
 
@@ -59,13 +57,18 @@ with col2:
     st.metric("Total de FMDCA", total_fmdca)
 
 with col3:
-    media_fmdca = df_fmdca["Proporção de Municípios com FMDCA"].mean()
-    st.metric("Percentual de Municípios com FMDCA", round(media_fmdca,1))
+    media_fmdca = df_fmdca["Proporção de Municípios com FMDCA (%)"].mean()
+    st.metric("Percentual de Municípios com FMDCA", f'{round(media_fmdca,1)}%')
 
 st.plotly_chart(fig_mapa, key="mapa_fmdca", use_container_width=True)
 
 st.dataframe(
-    df_fmdca.sort_values(by='Proporção de Municípios com FMDCA', ascending=False),
+    df_fmdca.sort_values(by='Proporção de Municípios com FMDCA (%)', ascending=False),
+    column_config={
+        "Proporção de Municípios com FMDCA (%)": st.column_config.NumberColumn(
+            format="%.2f%%",
+        )
+    },
     hide_index=True,
     use_container_width=True
 )

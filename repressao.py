@@ -14,8 +14,7 @@ uf_selecao = st.sidebar.selectbox(
 if uf_selecao:
     df_entidades_levantamentos = df_entidades_levantamentos[(df_entidades_levantamentos["uf"]==uf_selecao)]
 
-print(df_entidades_levantamentos.columns)
-col1, col2 = st.columns([2,3], vertical_alignment="top")
+col1, col2 = st.columns([2,3], gap="large", vertical_alignment="top")
 
 with col1:
     st.text("Estados nos quais existe procedimento para identificar casos de violência sexual em ambiente escolar da rede estadual")
@@ -26,7 +25,7 @@ with col2:
     st.plotly_chart(grafico_barra_horizontal(32, df_entidades_levantamentos), key="resposta_32", use_container_width=True)
 
 
-col3, col4 = st.columns([3,2], vertical_alignment="top")
+col3, col4 = st.columns([3,2], gap="large", vertical_alignment="top")
 
 with col3:
     st.text("Instituições em que é garantida a urgência e a celeridade necessárias ao atendimento de saúde e à produção probatória, preservada a confidencialidade, nos casos de violência sexual contra crianças e adolescentes de qualquer idade, nas seguintes instituições, por Estado:")
@@ -40,7 +39,7 @@ st.text("Atendimentos realizados em casos de violência sexual por profissionais
 st.plotly_chart(grafico_barra_horizontal(35, df_entidades_levantamentos), key="resposta_35", use_container_width=True)
 
 
-col5, col6, col7, col8 = st.columns(4, vertical_alignment="top")
+col5, col6, col7, col8 = st.columns(4, gap="large", vertical_alignment="top")
 
 with col5:
     st.text("Estados que fornecem assistência psicossocial especializada às crianças e adolescentes vítimas de violênciae testemunhas")
@@ -59,7 +58,7 @@ with col8:
     st.plotly_chart(grafico_pizza(46, df_entidades_levantamentos, .4), key="resposta_46", use_container_width=True)
 
 
-col9, col10, col11, col12 = st.columns(4, vertical_alignment="top")
+col9, col10, col11, col12 = st.columns(4, gap="large", vertical_alignment="top")
 
 with col5:
     st.text("Estados com pelo menos 1 advogado em todos os CREAS")
@@ -82,7 +81,7 @@ st.text("Estados que estabeleceram dotações orçamentárias específicas, nos 
 st.plotly_chart(grafico_mapa_brasil(51, df_entidades_levantamentos), key="resposta_51", use_container_width=True)
 
 
-col13, col14 = st.columns(2, vertical_alignment="top")
+col13, col14 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col13:
     st.text("Caso não existam varas especializadas em crimes contra a criança e o adolescente, o julgamento e a execução das causas decorrente das práticas de violência ficam a cargo dos juizados ou varas especializadas em violência doméstica e temas afins?")
@@ -96,7 +95,7 @@ st.text("Critérios atendidos por Estado na realização do depoimento especial 
 st.plotly_chart(grafico_barra_horizontal(55, df_entidades_levantamentos), key="resposta_55", use_container_width=True)
 
 
-col15, col16 = st.columns([3,2], vertical_alignment="top")
+col15, col16 = st.columns([3,2], gap="large", vertical_alignment="top")
 
 with col15:
     st.text("Panorama da realização da escuta especializada na capital do Estado, por meio de procedimentos de atendimento condizentes com os princípios estabelecidos no art. 2° do Decreto 9.603/2018 e as regras dos arts. 19 e 20 do mesmo normativo, e indicação dos órgãos da rede de proteção?")
@@ -110,7 +109,7 @@ st.text("Estados que criaram centros integrados compostos por atores dos órgão
 st.plotly_chart(grafico_mapa_brasil(57, df_entidades_levantamentos), key="resposta_57", use_container_width=True)
 
 
-col17, col18 = st.columns(2, vertical_alignment="top")
+col17, col18 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col17:
     st.text("Atendimentos que compõe os centros integrados existentes:")
@@ -121,7 +120,7 @@ with col18:
     st.plotly_chart(grafico_barra_horizontal(90, df_entidades_levantamentos), key="resposta_90", use_container_width=True)
 
 
-col19, col20 = st.columns([2,3], vertical_alignment="top")
+col19, col20 = st.columns([2,3], gap="large", vertical_alignment="top")
 
 with col19:
     st.text("Estados onde existe procedimento operacional padrão - POP, na polícia civil, com regras sobre o atendimento e o registro da ocorrência policial em crimes relacionados à violência contra crianças e adolescentes")
@@ -135,7 +134,7 @@ st.text("Critérios que são atendidos nos Estados onde o depoimento especial é
 st.plotly_chart(grafico_barra_horizontal(45, df_entidades_levantamentos), key="resposta_45", use_container_width=True)
 
 
-col21, col22, col23 = st.columns(3, vertical_alignment="top")
+col21, col22, col23 = st.columns(3, gap="large", vertical_alignment="top")
 
 with col21:
     st.text("Estados onde é aplicado fluxo de atendimento diferenciado para crianças e adolescentes pertencentes a povos e comunidades tradicionais")
@@ -148,7 +147,7 @@ with col23:
     st.plotly_chart(grafico_pizza(64, df_entidades_levantamentos), key="resposta_64", use_container_width=True)
 
 
-col24, col25, col26 = st.columns(3, vertical_alignment="top")
+col24, col25, col26 = st.columns(3, gap="large", vertical_alignment="top")
 
 with col24:
     st.text("Estados onde existe procedimento operacional padrão - POP, no âmbito da polícia militar com regras sobre o atendimento de ocorrências com crianças e/ou adolescentes (situações em que são autores, vítimas ou testemunhas)")

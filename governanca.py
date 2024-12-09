@@ -21,7 +21,7 @@ if uf_selecao:
 st.markdown("##### Estados que possuem Plano Estadual para o enfrentamento à violência contra crianças e adolescentes ou instrumento similar")
 st.plotly_chart(grafico_mapa_brasil(1, df_entidades_levantamentos), key="resposta_1", use_container_width=True)
 
-col1, col2 = st.columns(2, vertical_alignment="top")
+col1, col2 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col1:
         st.text("Estados que possuem Plano Estadual ancorado em algum instrumento normativo")
@@ -37,7 +37,7 @@ with col2:
         st.text("Estados nos quais houve a instituição de ciclos periódicos de avaliação e monitoramento do plano estadual")
         st.plotly_chart(grafico_pizza(7, df_entidades_levantamentos), key="resposta_7", use_container_width=True)
 
-col3, col4 = st.columns(2, vertical_alignment="top")
+col3, col4 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col3:
     st.text("Ações realizadas no processo de construção dos planos nos Estados que possuem Plano Estadual")
@@ -54,7 +54,7 @@ with col4:
 st.markdown("##### Estados que estabeleceram normas sobre o sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência")
 st.plotly_chart(grafico_mapa_brasil(13, df_entidades_levantamentos), key="resposta_13", use_container_width=True)
 
-col5, col6, col7 = st.columns(3, vertical_alignment="top")
+col5, col6, col7 = st.columns(3, gap="large", vertical_alignment="top")
 
 with col5:
     st.text("Estados que possuem Comitê Intersetorial de políticas públicas para a primeira infância?")
@@ -84,7 +84,7 @@ with col7:
 st.markdown("##### Estados que estabeleceram dotações orçamentárias específicas, em de 2024, para a implementação de ações específicas do sistema de garantias de direitos da criança e do adolescente vítima ou testemunha de violência?")
 st.plotly_chart(grafico_mapa_brasil(17, df_entidades_levantamentos), key="resposta_17", use_container_width=True)
 
-col8, col9 = st.columns(2, vertical_alignment="top")
+col8, col9 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col8:
     st.text("Estados nos quais a União ofereceu técnica na elaboração de planos estaduais para a primeira infância que articulem os diferentes setores, com vistas a uma abordagem multi e intersetorial")

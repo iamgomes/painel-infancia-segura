@@ -14,7 +14,7 @@ uf_selecao = st.sidebar.selectbox(
 if uf_selecao:
     df_entidades_levantamentos = df_entidades_levantamentos[(df_entidades_levantamentos["uf"]==uf_selecao)]
 
-col1, col2 = st.columns(2, vertical_alignment="top")
+col1, col2 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col1:
     st.text("Estados onde existem servicos de ouvidoria ou de resposta para recebimento de denuncias de violência integrado à rede de proteção")
@@ -28,7 +28,7 @@ st.text("Entes do SGDCA que possuem sistema eletrônico próprio para registro e
 st.plotly_chart(grafico_barra_horizontal(75, df_entidades_levantamentos), key="resposta_75", use_container_width=True)
 
 
-col3, col4, col5 = st.columns(3, vertical_alignment="top")
+col3, col4, col5 = st.columns(3, gap="large", vertical_alignment="top")
 
 with col3:
     st.text("Existência de interoperabilidade entre os sistemas próprios utilizados pelos entes do SGDCA:")

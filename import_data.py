@@ -7,13 +7,13 @@ estados = pd.DataFrame({
 })
 
 # Recebe um csv e converte em dataframe usando o cache
-#@st.cache_data
+@st.cache_data
 def convert_csv(file):
     return pd.read_csv(file, sep=";")
 
 
 #Clear all in-memory and on-disk data caches.
-st.cache_data.clear()
+#st.cache_data.clear()
 
 # Importando os dados
 df_capitais = convert_csv('dados/capitais.csv')

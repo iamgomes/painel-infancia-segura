@@ -20,21 +20,24 @@ def conselhos_por_100k(conselhos, populacao):
 
 tabela = df_conselhos.groupby(['ESTADO','UF'])[['Pop_Resd_Total_2024_PNAD','QTD_CONSELHO_TUTELAR']].sum()
 
-# Alterando os nomes das colunas
-tabela = tabela.rename(columns={
-    'Pop_Resd_Total_2024_PNAD': 'População Residente Total - PNAD 2024',
-    'QTD_CONSELHO_TUTELAR': 'Total de Conselhos Tutelares'
-})
-
 # Criando uma nova coluna aplicando a função conselhos_por_100k
 tabela['Conselhos por 100k'] = tabela.apply(
-    lambda row: round(conselhos_por_100k(row['Total de Conselhos Tutelares'], row['População Residente Total - PNAD 2024'])),
+    lambda row: round(conselhos_por_100k(row['QTD_CONSELHO_TUTELAR'], row['Pop_Resd_Total_2024_PNAD'])),
     axis=1
 )
 
 # Resetando o índice e acessando como coluna
 tabela.reset_index(inplace=True)
-tabela.set_index('UF')
+#tabela.set_index('UF')
+
+# Alterando os nomes das colunas
+tabela = tabela.rename(columns={
+    'ESTADO': 'Estado',
+    'Pop_Resd_Total_2024_PNAD': 'População Residente Total - PNAD 2024',
+    'QTD_CONSELHO_TUTELAR': 'Total de Conselhos Tutelares'
+})
+
+tabela = tabela[['UF', 'Estado', 'População Residente Total - PNAD 2024', 'Total de Conselhos Tutelares', 'Conselhos por 100k']]
 
 uf_selecao = st.sidebar.selectbox(
     "Estado", 
@@ -89,5 +92,6 @@ st.dataframe(
             format="%d",
         )
     },
+    hide_index=True,
     use_container_width=True
 )

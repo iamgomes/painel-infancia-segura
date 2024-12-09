@@ -14,7 +14,7 @@ uf_selecao = st.sidebar.selectbox(
 if uf_selecao:
     df_entidades_levantamentos = df_entidades_levantamentos[(df_entidades_levantamentos["uf"]==uf_selecao)]
 
-col1, col2 = st.columns(2, vertical_alignment="top")
+col1, col2 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col1:
     st.text("Programas de prevenção e proteção para quais formas de violência contra a criança e o adolescente por Estado")
@@ -25,7 +25,7 @@ with col2:
     st.plotly_chart(grafico_barra_horizontal(19, df_entidades_levantamentos), key="resposta_19", use_container_width=True)
 
 
-col3, col4 = st.columns([2,3], vertical_alignment="top")
+col3, col4 = st.columns([2,3], gap="large", vertical_alignment="top")
 
 with col3:
     st.text("Estados nos quais os profissionais tem acesso à formação continuada e capacitação sobre prevenção, identificação de evidências, diagnóstico e enfrentamento de todas as formas de violência contra a criança e o adolescente")
@@ -36,7 +36,7 @@ with col4:
     st.plotly_chart(grafico_barra_horizontal(21, df_entidades_levantamentos), key="resposta_21", use_container_width=True)
 
 
-col5, col6 = st.columns([2,3], vertical_alignment="top")
+col5, col6 = st.columns([2,3], gap="large", vertical_alignment="top")
 
 with col5:
     st.text("Estados nos quais os profissionais possuem especialização e atualização, em programas que contemplem a especificidade da primeira infância e a estratégia da intersetorialidade na promoção do desenvolvimento integral")
@@ -47,7 +47,7 @@ with col6:
     st.plotly_chart(grafico_barra_horizontal(85, df_entidades_levantamentos), key="resposta_85", use_container_width=True)
 
 
-col7, col8 = st.columns(2, vertical_alignment="top")
+col7, col8 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col7:
     st.text("Estados nos quais o poder público estadual estabeleceu matriz intersetorial de capacitação para os profissionais do sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência")
@@ -58,7 +58,7 @@ with col8:
     st.plotly_chart(grafico_pizza(89, df_entidades_levantamentos, .4), key="resposta_89", use_container_width=True)
 
 
-col9, col10 = st.columns(2, vertical_alignment="top")
+col9, col10 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col9:
     st.text("Estados nos quais existe atuação articulada entre os entes federativos na execução de ações destinadas a coibir o uso de castigo físico ou de tratamento cruel ou degradante e difundir formas não violentas de educação de crianças e de adolescentes")
