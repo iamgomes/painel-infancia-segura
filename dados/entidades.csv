@@ -1,0 +1,34 @@
+"id";"nome";"poder";"esfera";"site";"created_at";"updated_at";"municipio_id";"entidade_fiscal_id"
+11306;Tribunal de Contas dos Municípios de Goiás;T;M;;2023-06-14;2023-07-14;"5208707";11172
+11172;Tribunal de Contas do Estado de Goiás;T;E;;2023-05-31;2023-05-31;"5208707";11172
+11165;Tribunal de Contas do Estado do Pará;T;E;;2023-05-31;2023-07-14;"1501402";11165
+11171;Tribunal de Contas do Estado de Ceará;T;E;;2023-05-31;2023-05-31;"2304400";11171
+11173;Tribunal de Contas do Estado de Paraíba;T;E;;2023-05-31;2023-05-31;"2507507";11173
+11169;Tribunal de Contas do Estado de Paraná;T;E;;2023-05-31;2023-05-31;"4106902";11169
+11167;Tribunal de Contas do Estado de Roraima;T;E;;2023-05-31;2023-05-31;"1400100";11167
+11170;Tribunal de Contas do Estado de Santa Catarina;T;E;;2023-05-31;2023-05-31;"4205407";11170
+11164;Tribunal de Contas do Estado de Sergipe;T;E;;2023-05-31;2023-05-31;"2800308";11164
+11183;Tribunal de Contas do Estado de Rio de Janeiro;T;E;;2023-05-31;2023-05-31;"3304557";11183
+11186;Tribunal de Contas do Estado de São Paulo;T;E;;2023-05-31;2023-05-31;"3550308";11186
+11182;Tribunal de Contas do Estado de Acre;T;E;;2023-05-31;2023-05-31;"1200401";11182
+11175;Tribunal de Contas do Estado de Alagoas;T;E;;2023-05-31;2023-05-31;"2704302";11175
+11176;Tribunal de Contas do Estado de Amazonas;T;E;;2023-05-31;2023-05-31;"1302603";11176
+11188;Tribunal de Contas do Estado de Espírito Santo;T;E;;2023-05-31;2023-05-31;"3205309";11188
+11185;Tribunal de Contas do Estado de Maranhão;T;E;;2023-05-31;2023-05-31;"2111300";11185
+11181;Tribunal de Contas do Estado de Pernambuco;T;E;;2023-05-31;2023-05-31;"2611606";11181
+11187;Tribunal de Contas do Estado de Piauí;T;E;;2023-05-31;2023-05-31;"2211001";11187
+11177;Tribunal de Contas do Estado de Rio Grande do Norte;T;E;;2023-05-31;2023-05-31;"2408102";11177
+11180;Tribunal de Contas do Estado de Rondônia;T;E;;2023-05-31;2023-05-31;"1100205";11180
+11179;Tribunal de Contas do Estado de Rio Grande do Sul;T;E;;2023-05-31;2023-05-31;"4314902";11179
+11178;Tribunal de Contas do Estado de Tocantins;T;E;;2023-05-31;2023-05-31;"1721000";11178
+11184;Tribunal de Contas do Estado da Bahia;T;E;;2023-05-31;2023-07-13;"2927408";11184
+11307;Tribunal de Contas dos Municípios do Estado da Bahia;T;M;;2023-06-15;2023-09-05;"2927408";11307
+11305;Tribunal de Contas dos Municípios do Estado do Pará;T;M;;2023-05-31;2023-07-14;"1501402";11165
+11304;Tribunal de Contas do Município do Rio de Janeiro;T;M;;2023-05-31;2023-07-14;"3304557";11304
+11303;Tribunal de Contas do Município de São Paulo;T;M;;2023-05-31;2023-07-14;"3550308";11303
+11297;Tribunal de Contas da União;T;F;;2023-05-31;2023-07-17;"5300108";11297
+11291;Tribunal de Contas do Distrito Federal;T;D;;2023-05-31;2023-07-28;"5300108";11291
+11168;Tribunal de Contas do Estado de Mato Grosso;T;E;;2023-05-31;2023-05-31;"5103403";11168
+11174;Tribunal de Contas do Estado de Amapá;T;E;;2023-05-31;2023-05-31;"1600303";11174
+11166;Tribunal de Contas do Estado de Minas Gerais;T;E;;2023-05-31;2023-05-31;"3106200";11166
+11302;Tribunal de Contas do Estado de Mato Grosso do Sul;T;E;;2023-05-31;2023-05-31;"5002704";11302

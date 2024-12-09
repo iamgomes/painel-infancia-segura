@@ -1,0 +1,124 @@
+"id";"texto";"created_at";"updated_at";"pergunta_id";"cod"
+18;A) Metas/indicadores de desempenho;2024-08-21 16:40:27.214 -0400;2024-09-10 15:41:45.403 -0400;6;1
+19;B) Responsáveis por projeto específico;2024-08-21 16:40:55.374 -0400;2024-09-10 15:41:38.205 -0400;6;2
+21;Profissionais da secretaria de segurança pública;2024-08-21 17:24:46.204 -0400;2024-09-08 23:59:13.334 -0400;21;1
+44;A) Serviços de saúde em suas diferentes portas de entrada.;2024-08-22 15:28:59.431 -0400;2024-09-11 10:42:14.623 -0400;32;1
+51;B) Institutos de perícia (Ex: IML, Savvis).;2024-08-22 15:32:34.137 -0400;2024-09-11 10:53:17.018 -0400;33;2
+39;i) Promoção de programas educacionais que disseminem valores éticos de irrestrito respeito à dignidade da pessoa humana, bem como de programas de fortalecimento da parentalidade positiva, da educação sem castigos físicos e de ações de prevenção e enfrentamento da violência doméstica e familiar contra a criança e o adolescente.;2024-08-22 15:12:49.758 -0400;2024-09-11 10:31:33.616 -0400;25;9
+57;E) Orientações, quando houver necessidade.;2024-08-22 15:36:31.089 -0400;2024-09-11 10:52:28.928 -0400;35;5
+47;D) Delegacia Comum.;2024-08-22 15:29:44.710 -0400;2024-09-11 10:54:42.335 -0400;32;4
+48;E) Ministério Público.;2024-08-22 15:29:57.062 -0400;2024-09-11 10:54:58.240 -0400;32;5
+49;F) Defensoria Pública.;2024-08-22 15:30:11.733 -0400;2024-09-11 10:55:11.760 -0400;32;6
+40;A) Acolhimento da criança ou adolescente.;2024-08-22 15:24:40.207 -0400;2024-09-11 10:41:08.177 -0400;30;1
+35;E) Promoção de estudos e pesquisas, de estatísticas e de outras informações relevantes às consequências e à frequência das formas de violência contra a criança e o adolescente para a sistematização de dados nacionalmente unificados e a avaliação periódica dos resultados das medidas adotadas.;2024-08-22 15:10:42.965 -0400;2024-09-11 10:33:30.050 -0400;25;5
+36;F) Promoção e a realização de campanhas educativas direcionadas ao público escolar e à sociedade em geral e a difusão desta Lei e dos instrumentos de proteção aos direitos humanos das crianças e dos adolescentes, incluídos os canais de denúncia existentes.;2024-08-22 15:11:07.027 -0400;2024-09-11 10:33:14.074 -0400;25;6
+20;C) Fonte de recurso por projeto específico;2024-08-21 16:41:10.755 -0400;2024-09-10 15:41:29.248 -0400;6;3
+15;A) Diagnóstico situacional;2024-08-21 16:37:50.624 -0400;2024-09-10 15:41:17.634 -0400;5;1
+16;B) Consulta/participação da sociedade organizada;2024-08-21 16:38:18.807 -0400;2024-09-10 15:41:10.538 -0400;5;2
+38;H) Capacitação permanente das Polícias Civil e Militar, da Guarda Municipal, do Corpo de Bombeiros, dos profissionais nas escolas, dos Conselhos Tutelares e dos profissionais pertencentes aos órgãos e às áreas referidos no inciso II deste caput, para que identifiquem situações em que crianças e adolescentes vivenciam violência e agressões no âmbito familiar ou institucional.;2024-08-22 15:12:13.492 -0400;2024-09-11 10:32:25.118 -0400;25;8
+22;Profissionais da Polícia Civil;2024-08-21 17:25:03.039 -0400;2024-09-08 23:59:33.851 -0400;21;2
+23;Profissionais da Polícia Militar;2024-08-21 17:25:26.918 -0400;2024-09-09 00:01:02.805 -0400;21;3
+24;Profissionais da secretaria de saúde;2024-08-21 17:25:43.632 -0400;2024-09-09 00:01:21.372 -0400;21;4
+25;Profissionais da secretaria de assistência social;2024-08-21 17:26:01.579 -0400;2024-09-09 00:01:36.534 -0400;21;5
+26;Profissionais da secretaria de educação;2024-08-21 17:26:17.090 -0400;2024-09-09 00:01:58.469 -0400;21;6
+27;Profissionais do Conselho Tutelar;2024-08-21 17:26:33.950 -0400;2024-09-09 00:02:14.250 -0400;21;7
+28;Profissionais da Defensoria Pública;2024-08-21 17:26:58.334 -0400;2024-09-09 00:02:31.117 -0400;21;8
+29;Profissionais do Poder Judiciário;2024-08-21 17:27:17.672 -0400;2024-09-09 00:02:53.017 -0400;21;9
+30;Profissionais do Ministério Público;2024-08-21 17:27:54.836 -0400;2024-09-09 00:03:05.299 -0400;21;10
+59;A) Será elaborado, sempre que possível, a partir de documentação remetida por outros serviços, programas e equipamentos públicos, além do relato do acompanhante da criança ou do adolescente.;2024-08-22 15:44:58.518 -0400;2024-09-11 10:48:35.844 -0400;44;1
+46;C) Delegacia Especializada.;2024-08-22 15:29:30.236 -0400;2024-09-11 10:54:19.991 -0400;32;3
+52;C) Delegacia Especializada.;2024-08-22 15:32:50.688 -0400;2024-09-11 10:53:31.146 -0400;33;3
+45;B) Institutos de perícia (Ex: IML, Savvis).;2024-08-22 15:29:14.140 -0400;2024-09-11 10:53:56.727 -0400;32;2
+54;B) Medidas profiláticas contra infecções sexualmente transmissíveis.;2024-08-22 15:35:51.994 -0400;2024-09-11 10:50:55.866 -0400;35;2
+55;C) Realizado em ambiente acolhedor, prevenindo a violência institucional.;2024-08-22 15:36:07.531 -0400;2024-09-11 10:51:08.908 -0400;35;3
+56;D) Anticoncepção de emergência.;2024-08-22 15:36:18.673 -0400;2024-09-11 10:51:21.675 -0400;35;4
+50;A) Serviços de saúde em suas diferentes portas de entrada.;2024-08-22 15:32:20.374 -0400;2024-09-11 10:53:00.862 -0400;33;1
+58;F) Coleta, identificação, descrição e guarda de vestígios.;2024-08-22 15:36:43.773 -0400;2024-09-11 10:52:01.453 -0400;35;6
+53;A) Exames.;2024-08-22 15:35:38.441 -0400;2024-09-11 10:50:42.247 -0400;35;1
+65;G) A perícia física será realizada somente nos casos em que se fizer necessária a coleta de vestígios, evitada a perícia para descarte da ocorrência de fatos.;2024-08-22 15:46:31.337 -0400;2024-09-11 10:50:08.451 -0400;44;7
+64;F) A perícia médica ou psicológica primará pela intervenção profissional mínima.;2024-08-22 15:46:17.511 -0400;2024-09-11 10:49:50.523 -0400;44;6
+63;E) A descrição do fato não é realizada em lugares públicos que ofereçam exposição da identidade da criança ou do adolescente vítima ou testemunha de violência.;2024-08-22 15:45:59.534 -0400;2024-09-11 10:49:32.657 -0400;44;5
+62;D) Sempre que possível, a descrição do fato não será realizada diante da criança ou do adolescente.;2024-08-22 15:45:45.804 -0400;2024-09-11 10:49:18.323 -0400;44;4
+61;C) A autoridade policial prioriza a busca de informações com a pessoa que acompanha a criança ou o adolescente, de forma a preservá-lo, observado o disposto na Lei nº 13.431, de 2017.;2024-08-22 15:45:31.560 -0400;2024-09-11 10:49:01.422 -0400;44;3
+60;B) É assegurado, ainda que a criança ou o adolescente esteja desacompanhado.;2024-08-22 15:45:14.328 -0400;2024-09-11 10:48:46.996 -0400;44;2
+17;C) Construção intersetorial, envolvendo diferentes setores do Governo;2024-08-21 16:38:51.853 -0400;2024-09-10 15:41:01.143 -0400;5;3
+77;B) No âmbito do SUS na Capital;2024-08-22 16:02:03.511 -0400;2024-09-10 16:57:44.161 -0400;56;2
+89;G) Depoimento especial perante autoridade policial ou judiciária.;2024-08-22 16:10:09.713 -0400;2024-09-11 10:45:11.905 -0400;58;7
+76;A)  Rede escolar do Estado na Capital;2024-08-22 16:01:50.725 -0400;2024-09-11 10:45:30.802 -0400;56;1
+96;Profissionais da saúde;2024-08-22 16:27:07.416 -0400;2024-09-10 15:54:39.718 -0400;75;2
+43;D)  Comunicar o Conselho Tutelar;2024-08-22 15:25:24.886 -0400;2024-12-07 01:22:56.411 -0400;30;4
+41;B) Informar à vítima/responsável sobre direitos e procedimentos de comunicação;2024-08-22 15:24:56.053 -0400;2024-12-07 01:23:33.900 -0400;30;2
+75;E) Regulamentação sobre preservação e segurança da mídia relativa ao depoimento;2024-08-22 15:59:37.570 -0400;2024-12-07 23:11:26.867 -0400;55;5
+129;H) Varas Criminais.;2024-08-29 15:47:25.522 -0400;2024-09-09 00:34:39.241 -0400;32;8
+131;G) Aborto Legal (art.128 da Lei 2.848 do CP).;2024-08-29 15:57:54.991 -0400;2024-09-09 00:39:49.463 -0400;35;7
+78;C) Conselhos Tutelares da Capital;2024-08-22 16:02:25.326 -0400;2024-09-10 16:57:54.647 -0400;56;3
+79;D) No âmbito do SUAS da Capital;2024-08-22 16:02:40.750 -0400;2024-09-10 16:58:05.397 -0400;56;4
+80;E) Polícia Civil;2024-08-22 16:02:55.924 -0400;2024-09-10 16:58:18.029 -0400;56;5
+81;F) Defensoria Pública;2024-08-22 16:03:09.988 -0400;2024-09-10 16:58:30.552 -0400;56;6
+132;I) É assegurado o deslocamento da Criança e adolescente para o atendimento nos serviços em veiculos sem a presença do agressor.;2024-08-29 16:43:03.481 -0400;2024-09-11 10:50:26.330 -0400;44;9
+106;Violência Sexual;2024-08-29 11:24:42.304 -0400;2024-09-08 23:51:51.237 -0400;18;1
+107;Trabalho Infantil;2024-08-29 11:24:57.149 -0400;2024-09-08 23:52:18.725 -0400;18;2
+108;Tráfico de seres humanos;2024-08-29 11:25:15.334 -0400;2024-09-08 23:53:00.323 -0400;18;3
+109;Violência institucional;2024-08-29 11:25:29.055 -0400;2024-09-08 23:53:43.559 -0400;18;4
+110;Violência física (doméstica e intrafamiliar);2024-08-29 11:25:44.941 -0400;2024-09-08 23:54:33.118 -0400;18;5
+111;Violência psicológica;2024-08-29 11:25:57.478 -0400;2024-09-08 23:55:14.738 -0400;18;6
+112;Nenhum plano/programa/ação;2024-08-29 11:26:20.976 -0400;2024-09-08 23:55:33.400 -0400;18;7
+114;Campanhas relacionadas à erradição e enfrentamento ao trabalho infantil.;2024-08-29 11:38:07.323 -0400;2024-09-11 10:29:00.973 -0400;19;2
+116;Campanhas relacionadas à prevenção e enfrentamento à violência doméstica.;2024-08-29 11:38:34.831 -0400;2024-09-11 10:29:30.121 -0400;19;4
+115;Campanhas relacionadas ao enfrentamento ao tráfico de seres humanos.;2024-08-29 11:38:20.896 -0400;2024-09-11 10:29:21.667 -0400;19;3
+117;Nenhuma campanha.;2024-08-29 11:38:48.389 -0400;2024-09-11 10:29:38.262 -0400;19;5
+31;A) Promoção de campanhas educativas permanentes para a divulgação do direito da criança e do adolescente de serem educados e cuidados sem o uso de castigo físico ou de tratamento cruel ou degradante e dos instrumentos de proteção aos direitos humanos.;2024-08-22 15:09:23.561 -0400;2024-09-11 10:34:29.501 -0400;25;1
+118;Profissionais da secretaria de segurança pública;2024-08-29 13:37:46.297 -0400;2024-09-09 00:12:21.984 -0400;85;1
+119;Profissionais da Polícia Civil;2024-08-29 13:38:52.845 -0400;2024-09-09 00:12:55.546 -0400;85;2
+120;Profissionais da Polícia Militar;2024-08-29 13:39:08.131 -0400;2024-09-09 00:13:23.267 -0400;85;3
+121;Profissionais da secretaria de saúde;2024-08-29 13:39:20.883 -0400;2024-09-09 00:13:57.484 -0400;85;4
+122;Profissionais da secretaria de assistência social;2024-08-29 13:39:36.592 -0400;2024-09-09 00:14:38.479 -0400;85;5
+123;Profissionais da secretaria de educação;2024-08-29 13:39:49.388 -0400;2024-09-09 00:15:15.779 -0400;85;6
+124;Profissionais do Conselho Tutelar;2024-08-29 13:40:01.985 -0400;2024-09-09 00:15:41.147 -0400;85;7
+125;Profissionais da Defensoria Pública;2024-08-29 13:40:17.618 -0400;2024-09-09 00:16:14.731 -0400;85;8
+126;Profissionais do Poder Judiciário;2024-08-29 13:40:33.169 -0400;2024-09-09 00:16:43.115 -0400;85;9
+127;Profissionais do Ministério Público;2024-08-29 13:40:47.639 -0400;2024-09-09 00:17:17.279 -0400;85;10
+83;A) Acolhimento ou acolhida.;2024-08-22 16:08:21.334 -0400;2024-09-11 10:43:38.186 -0400;58;1
+133;J) A perícia ( fisica e médica), quando necessária é realizada em ambiente e com equipamentos adequados à criança e adolescente.;2024-08-29 16:43:29.149 -0400;2024-09-09 00:41:34.054 -0400;44;10
+128;G) Varas Cíveis.;2024-08-29 15:47:04.268 -0400;2024-09-11 10:55:28.753 -0400;32;7
+66;H) Os peritos deverão, sempre que possível, obter as informações necessárias sobre o fato ocorrido com os adultos acompanhantes da criança ou do adolescente ou por meio de atendimentos prévios realizados pela rede de serviços.;2024-08-22 15:46:45.829 -0400;2024-09-09 00:42:17.846 -0400;44;8
+113;Campanhas relacionadas ao enfrentamento à violência sexual.;2024-08-29 11:37:52.226 -0400;2024-09-11 10:28:48.937 -0400;19;1
+70;D) Não é realizado.;2024-08-22 15:49:45.252 -0400;2024-09-11 10:48:22.717 -0400;45;4
+69;C) Em local apropriado e acolhedor, com infraestrutura e espaço físico que garantam a privacidade da criança ou do adolescente vítima ou testemunha de violência.;2024-08-22 15:49:32.604 -0400;2024-09-11 10:48:03.679 -0400;45;3
+68;B) Realizado por profissional especializado e capacitado.;2024-08-22 15:49:19.903 -0400;2024-09-11 10:47:51.240 -0400;45;2
+85;C) Atendimento da rede de saúde e da rede de assistência social.;2024-08-22 16:08:48.110 -0400;2024-09-11 10:43:54.403 -0400;58;3
+82;G) Ministério Público;2024-08-22 16:03:22.500 -0400;2024-09-09 00:54:52.140 -0400;56;7
+86;D) Atendimento do Conselho Tutelar.;2024-08-22 16:09:03.851 -0400;2024-09-11 10:44:29.219 -0400;58;4
+87;E) Atendimento da autoridade policial.;2024-08-22 16:09:18.995 -0400;2024-09-11 10:44:41.554 -0400;58;5
+88;F) Atendimento do Ministério Público.;2024-08-22 16:09:49.161 -0400;2024-09-11 10:44:54.565 -0400;58;6
+97;Rede assistencial;2024-08-22 16:27:23.208 -0400;2024-09-10 15:54:45.616 -0400;75;3
+98;Conselho Tutelar;2024-08-22 16:27:38.463 -0400;2024-09-10 15:54:50.516 -0400;75;4
+100;Ministério Público;2024-08-22 16:28:03.854 -0400;2024-09-10 16:53:55.480 -0400;75;6
+102;Vara da Infância;2024-08-22 16:28:31.830 -0400;2024-09-10 16:54:04.242 -0400;75;8
+101;Defensoria Pública;2024-08-22 16:28:15.390 -0400;2024-09-09 01:01:47.408 -0400;75;7
+103;A) ALTO RISCO;2024-08-22 16:35:10.918 -0400;2024-09-09 01:02:24.534 -0400;83;1
+104;B) MÉDIO RISCO;2024-08-22 16:35:24.132 -0400;2024-09-09 01:02:34.422 -0400;83;2
+105;C) BAIXO RISCO;2024-08-22 16:35:35.648 -0400;2024-09-09 01:02:44.003 -0400;83;3
+95;Polícia Civil;2024-08-22 16:26:51.029 -0400;2024-09-10 15:54:33.799 -0400;75;1
+34;D) Promoção de espaços intersetoriais locais para a articulação de ações e a elaboração de planos de atuação conjunta focados nas famílias em situação de violência, com participação de profissionais de saúde, de assistência social e de educação e de órgãos de promoção, proteção e defesa dos direitos da criança e do adolescente.;2024-08-22 15:10:25.644 -0400;2024-09-09 00:20:26.018 -0400;25;4
+67;A) Protocolo de atendimento, conforme art. 11 da Lei 13.431 e  Resolução nº 01/2019 - CONCPC e Pacto Nacional pela  Escuta Protegida.;2024-08-22 15:49:06.873 -0400;2024-09-11 10:47:39.365 -0400;45;1
+99;Profissionais da  educação;2024-08-22 16:27:51.781 -0400;2024-09-09 01:01:08.506 -0400;75;5
+147;H) Não é realizado;2024-09-10 12:04:47.037 -0400;2024-09-10 12:04:47.037 -0400;56;8
+72;B) Realizado por profissional especializado e capacitado;2024-08-22 15:58:46.871 -0400;2024-12-07 23:06:34.302 -0400;55;2
+135;G) Para crianças e adolescentes de Povos e Comunidades Tradicionais, existe na equipe técnica profissional com formação ou conhecimento antropológico;2024-08-29 17:09:15.300 -0400;2024-12-07 23:10:36.362 -0400;55;7
+140;H) Não é realizado depoimento especial;2024-09-04 15:37:39.387 -0400;2024-12-07 23:12:55.673 -0400;55;8
+74;D) Local reservado, silencioso, com decoração acolhedora e simples, para evitar distrações (art. 23, p. único do Decreto 9.603/18);2024-08-22 15:59:22.072 -0400;2024-12-07 23:13:29.585 -0400;55;4
+37;G) Celebração de convênios, de protocolos, de ajustes, de termos e de outros instrumentos de promoção de parceria entre órgãos governamentais ou entre estes e entidades não governamentais, com o objetivo de implementar programas de erradicação da violência, de tratamento cruel ou degradante e de formas violentas de educação, correção ou disciplina.;2024-08-22 15:11:51.974 -0400;2024-09-11 10:32:47.253 -0400;25;7
+33;C) Inclusão, nas políticas públicas, de ações que visem a garantir os direitos da criança e do adolescente, desde a atenção pré-natal, e de atividades junto aos pais e responsáveis com o objetivo de promover a informação, a reflexão, o debate e a orientação sobre alternativas ao uso de castigo físico ou de tratamento cruel ou degradante no processo educativo.;2024-08-22 15:09:57.017 -0400;2024-09-11 10:33:50.347 -0400;25;3
+32;B) Apoio e incentivo às práticas de resolução pacífica de conflitos que envolvam violência contra a criança e o adolescente.;2024-08-22 15:09:40.785 -0400;2024-09-11 10:34:10.521 -0400;25;2
+136;A) Dados pessoais da criança ou do adolescente.;2024-08-29 23:38:49.070 -0400;2024-09-11 10:42:35.495 -0400;90;1
+137;B) Descrição do atendimento.;2024-08-29 23:39:18.881 -0400;2024-09-11 10:42:45.858 -0400;90;2
+138;C) Relato espontâneo da criança ou do adolescente, quando houver.;2024-08-29 23:39:46.095 -0400;2024-09-11 10:42:54.873 -0400;90;3
+139;D) Encaminhamentos efetuados.;2024-08-29 23:40:10.700 -0400;2024-09-11 10:43:04.242 -0400;90;4
+84;B) Escuta especializada nos órgãos do sistema de proteção.;2024-08-22 16:08:34.522 -0400;2024-09-11 10:44:09.443 -0400;58;2
+1;I) Em nenhuma instituição.;2024-09-20 10:54:32.692 -0400;2024-09-20 10:55:00.706 -0400;32;9
+42;C) Encaminhar a vítima para atendimento emergencial em órgão do SGDCA;2024-08-22 15:25:12.065 -0400;2024-12-07 01:22:33.109 -0400;30;3
+71;A) Protocolo de atendimento, conforme art. 11 da Lei 13.431/2017 e Resolução CNJ n° 299/2019;2024-08-22 15:58:35.535 -0400;2024-12-07 23:05:49.694 -0400;55;1
+73;C) Em local apropriado e acolhedor, garantindo a privacidade da vítima ou testemunha;2024-08-22 15:59:03.648 -0400;2024-12-07 23:06:47.313 -0400;55;3
+134;F) Assegurado Assistencia juridica na sala de audiência para criança ou adolescente;2024-08-29 17:08:13.685 -0400;2024-12-07 23:11:42.253 -0400;55;6
+148;E) Não existe modelo de registro.;2024-09-10 12:05:34.086 -0400;2024-12-07 23:37:47.416 -0400;90;5
