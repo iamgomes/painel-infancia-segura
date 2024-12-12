@@ -18,6 +18,7 @@ st.logo(
 
 pages = {
     "Dimensões": [
+        st.Page("visao_geral.py", title="Visão Geral", icon="🌐"),
         st.Page("governanca.py", title="Governança", icon="📋"),
         st.Page("prevencao.py", title="Prevenção", icon="✅"),
         st.Page("repressao.py", title="Repressão e Acolhimento", icon="⚖️"),
@@ -26,8 +27,6 @@ pages = {
         st.Page("fmdca.py", title="FMDCA", icon="🏛️"),
     ],
 }
-
-st.sidebar.header("Filtros")
 
 pg = st.navigation(pages)
 pg.run()

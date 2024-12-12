@@ -1,6 +1,6 @@
 import streamlit as st
 from import_data import *
-from funcoes_graficos import *
+from graficos import *
 
 st.title("👨‍👩‍👧‍👦 Distribuição espacial e proporcional de Conselhos Tutelares (CT) no Brasil - 2024")
 
@@ -39,6 +39,7 @@ tabela = tabela.rename(columns={
 
 tabela = tabela[['UF', 'Estado', 'População Residente Total - PNAD 2024', 'Total de Conselhos Tutelares', 'Conselhos por 100k']]
 
+st.sidebar.header("Filtros")
 uf_selecao = st.sidebar.selectbox(
     "Estado", 
     estados["uf"],
@@ -56,7 +57,7 @@ fig_mapa = px.choropleth(
     locations="UF",
     featureidkey="properties.sigla",  # Códigos ISO no GeoJSON
     color="Conselhos por 100k",
-    color_continuous_scale=[(0, cinza), (0.5, amarelo), (1, laranja)],  # Degradê verde -> amarelo -> vermelho
+    color_continuous_scale=[(0, cinza), (0.5, nao), (1, sim)],  # Degradê verde -> amarelo -> vermelho
 )
 
 fig_mapa.update_geos(

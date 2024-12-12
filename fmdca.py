@@ -1,6 +1,6 @@
 import streamlit as st
 from import_data import *
-from funcoes_graficos import *
+from graficos import *
 
 st.title("🏛️ Distribuição espacial e proporcional dos Fundos Municipais de Direitos da Criança e do Adolescente (FMDCA) - 2024")
 
@@ -15,6 +15,7 @@ df_fmdca = df_fmdca.rename(columns={
     'Qtd_Municipios': 'Total de Municípios',
 })
 
+st.sidebar.header("Filtros")
 uf_selecao = st.sidebar.selectbox(
     "Estado", 
     estados["uf"],
@@ -32,7 +33,7 @@ fig_mapa = px.choropleth(
     locations="UF",
     featureidkey="properties.sigla",  # Códigos ISO no GeoJSON
     color="Proporção de Municípios com FMDCA (%)",
-    color_continuous_scale=[(0, cinza), (0.5, amarelo), (1, laranja)],  # Degradê verde -> amarelo -> vermelho
+    color_continuous_scale=[(0, cinza), (0.5, nao), (1, sim)],  # Degradê verde -> amarelo -> vermelho
 )
 
 fig_mapa.update_geos(

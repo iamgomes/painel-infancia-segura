@@ -1,0 +1,16 @@
+[theme]
+base="light"
+primaryColor = "#1c6f9d"        # Cor primária
+backgroundColor = "#FFFFFF"     # Cor do fundo
+secondaryBackgroundColor = "#F0F2F6"  # Cor de fundo secundária
+textColor = "#000000"           # Cor do texto
+font = "sans serif"             # Fonte (opções: 'sans serif', 'serif', 'monospace')
+
+[server]
+headless = true                 # Executa o Streamlit em modo headless
+port = 8501                     # Porta padrão
+enableCORS = false              # Habilita/desabilita CORS
+
+[ui]
+hide_streamlit_marker = true    # Esconde o botão "Made with Streamlit"
+hide_menu_items = true          # Esconde o menu de configurações (três pontos)

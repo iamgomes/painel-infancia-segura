@@ -1,9 +1,10 @@
 import streamlit as st
 from import_data import *
-from funcoes_graficos import *
+from graficos import *
 
 st.title("✅ Prevenção")
 
+st.sidebar.header("Filtros")
 uf_selecao = st.sidebar.selectbox(
     "Estado", 
     estados["uf"],
