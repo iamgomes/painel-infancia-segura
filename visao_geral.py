@@ -61,10 +61,25 @@ Para que as crianças e adolescentes sejam realmente tratados como prioridade ab
 ---
 
 📄 **Acesse o Relatório Completo:**  
-[🔗 Clique aqui para acessar o relatório completo.](/pdf/Levantamento_Infancia_Segura_Atricon.pdf)
+''')
 
+# Caminho para o arquivo PDF
+file_path = "pdf/Levantamento_Infancia_Segura_Atricon.pdf"
+
+# Ler o arquivo em modo binário
+with open(file_path, "rb") as pdf_file:
+    pdf_content = pdf_file.read()
+
+# Criar o botão de download
+st.download_button(
+    label="🔗 Clique aqui para acessar o relatório completo.",
+    data=pdf_content,  # Conteúdo do arquivo
+    file_name="levantamento_infancia_segura_2024.pdf",  # Nome do arquivo para download
+    mime="application/pdf"  # Tipo MIME do arquivo
+)
+
+st.markdown('''
 ---
 
 Esta é uma oportunidade de refletirmos e agirmos para mudar a realidade das nossas crianças e adolescentes. A responsabilidade é de todos nós!
-
 ''')
