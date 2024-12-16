@@ -13,7 +13,23 @@ Essa legislação organiza o **Sistema de Garantias de Direitos para Crianças e
 
 > **"Os filhos dos outros e os filhos de ninguém são nossa responsabilidade constitucional e moral."**  
 > — *Pedro Hartung, Instituto Alana*
+            
+Nesta conjuntura, a avaliação e o monitoramento das políticas públicas relacionadas ao SGDCA na prevenção e enfrentamento da violência contra crianças e adolescentes não são apenas uma prerrogativa dos Tribunais de Contas, mas também um imperativo ético e social. 
 
+A atenção dispensada a esta etapa vital da vida humana é determinante para moldar gerações mais saudáveis, instruídas e aptas a contribuir positivamente para a sociedade. 
+Por meio da confluência de esforços institucionais, dados concretos e compromisso com a vida e o bem-estar infantil, as Cortes de Contas e a ATRICON reafirmam seu compromisso em não apenas identificar falhas e áreas de melhoria, mas também em ser catalisador de transformações significativas que ecoarão por décadas, fortalecendo o tecido social e garantindo um futuro mais promissor para as crianças de todo o Brasil. 
+
+Destarte, com o intuito de verificar as ações e políticas públicas desenvolvidas pelos entes do SGDCA em diferentes estados do Brasil, na prevenção e enfrentamento da violência contra crianças e adolescentes, e em alinhamento à ação 27 do Plano Anual de Trabalho da Rede Integrar, a ATRICON desenvolveu o **PROJETO INFÂNCIA SEGURA**.
+
+##### **Tribunais de Contas Partícipes**
+|||||
+|--------|--------|--------|--------|
+| TCE-PI | TCE-AM | TCE-CE | TCE-SC |
+| TCE-RO | TCE-PB | TCE-MS | TCE-PR |
+| TCE-RR | TCE-PE | TCE-MT | TCE-MG |
+| TCE-PA | TCE-RN | TCE-GO | TCE-RJ |
+| TCE-TO | TCE-BA | TCE-RS | TCE-ES |
+            
 ---
 
 ### **A Realidade Atual: O Sistema que Falha**

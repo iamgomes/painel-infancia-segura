@@ -33,7 +33,7 @@ fig_mapa = px.choropleth(
     locations="UF",
     featureidkey="properties.sigla",  # Códigos ISO no GeoJSON
     color="Proporção de Municípios com FMDCA (%)",
-    color_continuous_scale=[(0, cinza), (0.5, nao), (1, sim)],  # Degradê verde -> amarelo -> vermelho
+    color_continuous_scale=[(0, cinza), (0.5, sim), (1, nao)],  # Degradê verde -> amarelo -> vermelho
 )
 
 fig_mapa.update_geos(

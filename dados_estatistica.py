@@ -29,7 +29,7 @@ st.text("Entes do SGDCA que possuem sistema eletrônico próprio para registro e
 st.plotly_chart(grafico_barra_horizontal(75, df_entidades_levantamentos), key="resposta_75", use_container_width=True)
 
 
-col3, col4, col5 = st.columns(3, gap="large", vertical_alignment="top")
+col3, col4 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col3:
     st.text("Existência de interoperabilidade entre os sistemas próprios utilizados pelos entes do SGDCA:")
@@ -39,9 +39,13 @@ with col4:
     st.text("Existência de sistema eletrônico de informações que realiza a integração, de forma sigilosa, das informações produzidas pelo sistema de garantia")
     st.plotly_chart(grafico_pizza(77, df_entidades_levantamentos, .4), key="resposta_77", use_container_width=True)
 
+
+col5, col6 = st.columns(2, gap="large", vertical_alignment="top")
+
 with col5:
     st.text("Estados em que os órgãos do SGDCA realizam o mapeamento das ocorrências das formas de violência contra crianças e adolescentes")
     st.plotly_chart(grafico_pizza(80, df_entidades_levantamentos), key="resposta_80", use_container_width=True)
 
-st.text("Qual o risco da criança e adolescente sofrer revitimização?")
-st.plotly_chart(grafico_barra_horizontal(83, df_entidades_levantamentos), key="resposta_83", use_container_width=True)
+with col6:
+    st.text("Qual o risco da criança e adolescente sofrer revitimização?")
+    st.plotly_chart(grafico_pizza_com_legenda(83, df_entidades_levantamentos, .4), key="resposta_83", use_container_width=True)

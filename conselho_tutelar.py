@@ -57,7 +57,7 @@ fig_mapa = px.choropleth(
     locations="UF",
     featureidkey="properties.sigla",  # Códigos ISO no GeoJSON
     color="Conselhos por 100k",
-    color_continuous_scale=[(0, cinza), (0.5, nao), (1, sim)],  # Degradê verde -> amarelo -> vermelho
+    color_continuous_scale=[(0, cinza), (0.5, sim), (1, nao)], 
 )
 
 fig_mapa.update_geos(

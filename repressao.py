@@ -39,7 +39,7 @@ st.text("Atendimentos realizados em casos de violência sexual por profissionais
 st.plotly_chart(grafico_barra_horizontal(35, df_entidades_levantamentos), key="resposta_35", use_container_width=True)
 
 
-col5, col6, col7, col8 = st.columns(4, gap="large", vertical_alignment="top")
+col5, col6 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col5:
     st.text("Estados que fornecem assistência psicossocial especializada às crianças e adolescentes vítimas de violênciae testemunhas")
@@ -48,6 +48,9 @@ with col5:
 with col6:
     st.text("Estados que possuem equipes multidisciplinares destinadas a assessorar as DPCAs")
     st.plotly_chart(grafico_pizza(40, df_entidades_levantamentos, .4), key="resposta_40", use_container_width=True)
+
+
+col7, col8 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col7:
     st.text("Estados que, caso não exista delegacia especializada, a vítima é encaminhada prioritariamente para a delegacia especializada em temas de direitos humanos")
@@ -58,21 +61,24 @@ with col8:
     st.plotly_chart(grafico_pizza(46, df_entidades_levantamentos, .4), key="resposta_46", use_container_width=True)
 
 
-col9, col10, col11, col12 = st.columns(4, gap="large", vertical_alignment="top")
+col9, col10 = st.columns(2, gap="large", vertical_alignment="top")
 
-with col5:
+with col9:
     st.text("Estados com pelo menos 1 advogado em todos os CREAS")
     st.plotly_chart(grafico_pizza(47, df_entidades_levantamentos), key="resposta_47", use_container_width=True)
 
-with col6:
-    st.text("Estados onde existe a oferta dos serviços de Y acolhimento para as crianças e os adolescentes")
+with col10:
+    st.text("Estados onde existe a oferta dos serviços de acolhimento para as crianças e os adolescentes")
     st.plotly_chart(grafico_pizza(49, df_entidades_levantamentos, .4), key="resposta_49", use_container_width=True)
 
-with col7:
+
+col11, col12 = st.columns(2, gap="large", vertical_alignment="top")
+
+with col11:
     st.text("A Secretaria de Assistência Social realiza o monitoramento e a avaliação da atividade de elaboração dos planos individuais e familiares de atendimento de crianças em serviço de acolhimento, valorizando a participação da criança e do adolescente e, sempre que possível, a preservação dos vínculos familiares no âmbito do Sistema Unico de Assistência Social (SUAS)")
     st.plotly_chart(grafico_pizza(48, df_entidades_levantamentos), key="resposta_48", use_container_width=True)
 
-with col8:
+with col12:
     st.text("Estados que existem Varas da Infância e da Juventude específicas, em todas as comarcas que correspondam a municípios acima de 50.000 de habitantes")
     st.plotly_chart(grafico_pizza(52, df_entidades_levantamentos, .4), key="resposta_52", use_container_width=True)
 

@@ -8,8 +8,8 @@ laranja = "#E66C37"
 cinza = "#ccc"
 verde = "#58BDB6"
 azul = "#1C6F9D"
-sim = azul
-nao = verde
+sim = verde
+nao = azul
 
 # Configurando tamanho dos gráficos de pizza
 width_pizza = 275
@@ -57,7 +57,7 @@ def grafico_mapa_brasil(pergunta_id, df_entidades_levantamentos):
 
 
 ######################################
-# Função que cria gráfico de pizza com respostas SIM e NÃO
+# Função que cria gráfico de pizza 
 ######################################
 def grafico_pizza(pergunta_id, df_entidades_levantamentos, hole=None):
     filtro_pergunta = df_respostas[(df_respostas["pergunta_id"]==pergunta_id)][['resposta_levantamento_id','boolean_answer']]
@@ -78,6 +78,53 @@ def grafico_pizza(pergunta_id, df_entidades_levantamentos, hole=None):
         color='Resposta',
         #title="Plano Estadual possui alinhamento com o Plano Nacional de Enfrentamento da Violência contra Crianças e Adolescentes?",
         color_discrete_map={'Sim': sim, 'Não': nao},
+        hole=hole
+    )
+    fig_resposta.update_traces(textposition='inside', textinfo='percent+value')
+    fig_resposta.update_layout(
+        width=width_pizza,  # Largura em pixels
+        height=height_pizza  # Altura em pixels
+    )
+
+    return fig_resposta
+
+
+def grafico_pizza_com_legenda(pergunta_id, df_entidades_levantamentos, hole=None):
+    filtro_pergunta = df_respostas[(df_respostas["pergunta_id"]==pergunta_id)]
+
+    df_resposta = pd.merge(
+        df_entidades_levantamentos, filtro_pergunta, left_on="id_x", right_on="resposta_levantamento_id", how="inner"
+    )[['id']]
+
+    df_resposta = pd.merge(
+        df_resposta, df_resposta_opcoes, left_on="id", right_on="respostapergunta_id", how="inner"
+    )
+
+    df_resposta = pd.merge(
+        df_resposta, df_opcoes, left_on="opcao_id", right_on="id", how="inner"
+    )
+
+    count_df_resposta = df_resposta['texto'].value_counts().reset_index()
+    count_df_resposta.columns = ['texto', 'total']
+
+    baixo_risco = pd.DataFrame({'texto':['BAIXO RISCO'],
+                                'total':[0]})
+    
+    # concateando com dataframe criado para exibir a legando de baixo risco que é zero
+    count_df_resposta = pd.concat([count_df_resposta, baixo_risco], ignore_index=True)
+
+    pie_data = pd.DataFrame({
+        'Resposta': count_df_resposta['texto'],
+        'Quantidade': count_df_resposta['total']
+    })
+
+    fig_resposta = px.pie(
+        pie_data, 
+        values='Quantidade', 
+        names='Resposta',
+        color='Resposta',
+        #title="Plano Estadual possui alinhamento com o Plano Nacional de Enfrentamento da Violência contra Crianças e Adolescentes?",
+        
         hole=hole
     )
     fig_resposta.update_traces(textposition='inside', textinfo='percent+value')

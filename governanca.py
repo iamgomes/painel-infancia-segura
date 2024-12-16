@@ -88,7 +88,7 @@ st.plotly_chart(grafico_mapa_brasil(17, df_entidades_levantamentos), key="respos
 col8, col9 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col8:
-    st.text("Estados nos quais a União ofereceu técnica na elaboração de planos estaduais para a primeira infância que articulem os diferentes setores, com vistas a uma abordagem multi e intersetorial")
+    st.text("Estados nos quais a União ofereceu assistência técnica na elaboração de planos estaduais para a primeira infância que articulem os diferentes setores, com vistas a uma abordagem multi e intersetorial")
     st.plotly_chart(grafico_pizza(11, df_entidades_levantamentos), key="resposta_11", use_container_width=True)
 with col9:
     st.text("Estados que estabeleceram as diretrizes para que os municípios definam o fluxo de atendimento das crianças e adolescentes vítimas ou testemunhas de violência, conforme art. 9°, Il do Decreto 9.603/2018")
