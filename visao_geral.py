@@ -130,15 +130,23 @@ Esta é uma oportunidade de refletirmos e agirmos para mudar a realidade das nos
 ---
 ''')
 
-col1, col2, col3, col4 = st.columns([1,1,2,2], gap="large", vertical_alignment="center")
+esquerda, direita = st.columns([1,5])
+
+with esquerda:
+  st.markdown("**Realização**")
+
+with direita:
+  st.markdown("**Parceiros**")
+
+
+col1, col2, col3, col4 = st.columns([1,1,2,2], gap="medium", vertical_alignment="center")
 
 with col1:
-  st.markdown("**Realização**")
   st.image("assets/logo_atricon.svg", width=150)
 
 with col2:
-   st.markdown("**Parceiros**")
-   st.image("assets/logo_unicef.svg", width=135)
+  
+  st.image("assets/logo_unicef.svg", width=135)
 
 with col3:
   st.image("assets/logo_coalizao.svg", width=350)
