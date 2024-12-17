@@ -22,14 +22,44 @@ Por meio da confluência de esforços institucionais, dados concretos e compromi
 Destarte, com o intuito de verificar as ações e políticas públicas desenvolvidas pelos entes do SGDCA em diferentes estados do Brasil, na prevenção e enfrentamento da violência contra crianças e adolescentes, e em alinhamento à ação 27 do Plano Anual de Trabalho da Rede Integrar, a ATRICON desenvolveu o **PROJETO INFÂNCIA SEGURA**.
 
 ##### **Tribunais de Contas Partícipes**
-|||||
-|--------|--------|--------|--------|
-| TCE-PI | TCE-AM | TCE-CE | TCE-SC |
-| TCE-RO | TCE-PB | TCE-MS | TCE-PR |
-| TCE-RR | TCE-PE | TCE-MT | TCE-MG |
-| TCE-PA | TCE-RN | TCE-GO | TCE-RJ |
-| TCE-TO | TCE-BA | TCE-RS | TCE-ES |
-            
+''')
+
+st.html('''
+<table style="border-collapse: collapse; width: 100%; border: 1px solid #ccc; text-align: center;">
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-PI</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-AM</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-CE</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-SC</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-RO</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-PB</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-MS</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-PR</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-RR</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-PE</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-MT</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-MG</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-PA</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-RN</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-GO</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-RJ</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-TO</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-BA</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-RS</td>
+    <td style="border: 1px solid #ccc; padding: 8px;">TCE-ES</td>
+  </tr>
+</table>
+''')
+
+st.markdown('''         
 ---
 
 ### **A Realidade Atual: O Sistema que Falha**

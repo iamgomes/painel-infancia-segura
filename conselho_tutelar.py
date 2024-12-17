@@ -1,6 +1,8 @@
 import streamlit as st
 from import_data import *
 from graficos import *
+import locale
+locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
 st.title("👨‍👩‍👧‍👦 Distribuição espacial e proporcional de Conselhos Tutelares (CT) no Brasil - 2024")
 
@@ -21,7 +23,7 @@ def conselhos_por_100k(conselhos, populacao):
 tabela = df_conselhos.groupby(['ESTADO','UF'])[['Pop_Resd_Total_2024_PNAD','QTD_CONSELHO_TUTELAR']].sum()
 
 # Criando uma nova coluna aplicando a função conselhos_por_100k
-tabela['Conselhos por 100k'] = tabela.apply(
+tabela['Conselhos por 100 mil habitantes'] = tabela.apply(
     lambda row: round(conselhos_por_100k(row['QTD_CONSELHO_TUTELAR'], row['Pop_Resd_Total_2024_PNAD'])),
     axis=1
 )
@@ -37,7 +39,7 @@ tabela = tabela.rename(columns={
     'QTD_CONSELHO_TUTELAR': 'Total de Conselhos Tutelares'
 })
 
-tabela = tabela[['UF', 'Estado', 'População Residente Total - PNAD 2024', 'Total de Conselhos Tutelares', 'Conselhos por 100k']]
+tabela = tabela[['UF', 'Estado', 'População Residente Total - PNAD 2024', 'Total de Conselhos Tutelares', 'Conselhos por 100 mil habitantes']]
 
 st.sidebar.header("Filtros")
 uf_selecao = st.sidebar.selectbox(
@@ -56,7 +58,7 @@ fig_mapa = px.choropleth(
     geojson=geojson_url,
     locations="UF",
     featureidkey="properties.sigla",  # Códigos ISO no GeoJSON
-    color="Conselhos por 100k",
+    color="Conselhos por 100 mil habitantes",
     color_continuous_scale=[(0, cinza), (0.5, sim), (1, nao)], 
 )
 
@@ -86,12 +88,17 @@ with col3:
 
 st.plotly_chart(fig_mapa, key="mapa_conselho", use_container_width=True)
 
+# Formatando população com separador de milhar
+tabela_formatada = tabela.sort_values(by='Conselhos por 100 mil habitantes', ascending=False).style.format({
+    'População Residente Total - PNAD 2024': '{:n}'.format,
+})
+
 st.dataframe(
-    tabela.sort_values(by='Conselhos por 100k', ascending=False),
+    tabela_formatada,
         column_config={
-        "População Residente Total - PNAD 2024": st.column_config.NumberColumn(
-            format="%d",
-        )
+        "População Residente Total - PNAD 2024": {'alignment': 'center'},
+        "Total de Conselhos Tutelares": {'alignment': 'center'},
+        "Conselhos por 100 mil habitantes": {'alignment': 'center'},
     },
     hide_index=True,
     use_container_width=True

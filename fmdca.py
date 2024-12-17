@@ -63,12 +63,16 @@ with col3:
 
 st.plotly_chart(fig_mapa, key="mapa_fmdca", use_container_width=True)
 
+df_fmdca = df_fmdca.sort_values(by='Proporção de Municípios com FMDCA (%)', ascending=False).style.format({
+    'Proporção de Municípios com FMDCA (%)': '{:.2f}%',
+})
+
 st.dataframe(
-    df_fmdca.sort_values(by='Proporção de Municípios com FMDCA (%)', ascending=False),
+    df_fmdca,
     column_config={
-        "Proporção de Municípios com FMDCA (%)": st.column_config.NumberColumn(
-            format="%.2f%%",
-        )
+        "Proporção de Municípios com FMDCA (%)": {'alignment': 'center'},
+        "Total de FMDCA": {'alignment': 'center'},
+        "Total de Municípios": {'alignment': 'center'},
     },
     hide_index=True,
     use_container_width=True

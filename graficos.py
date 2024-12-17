@@ -5,20 +5,32 @@ from import_data import *
 # Configurando as cores
 amarelo =  "#EDC40C" # "#E1C233"
 laranja = "#E66C37"
-cinza = "#ccc"
+cinza = "#EEE"
 verde = "#58BDB6"
 azul = "#1C6F9D"
 sim = verde
 nao = azul
 
 # Configurando tamanho dos gráficos de pizza
-width_pizza = 275
-height_pizza = 275
+width_pizza = 300
+height_pizza = 300
+
+# Função para quebrar o texto a cada 3 palavras
+def quebrar_texto(texto, palavras_por_linha=3):
+    palavras = texto.split()  # Divide o texto em palavras
+    linhas = []
+    
+    # Quebra o texto em grupos de 3 palavras
+    for i in range(0, len(palavras), palavras_por_linha):
+        linha = ' '.join(palavras[i:i+palavras_por_linha])  # Pega 3 palavras de cada vez
+        linhas.append(linha)
+    
+    return '<br>'.join(linhas)  # Junta as linhas com quebras de linha
 
 ######################################
 # Função que cria gráfico de mapa do Brasil com respostas SIM e NÃO
 ######################################
-def grafico_mapa_brasil(pergunta_id, df_entidades_levantamentos):
+def grafico_mapa_brasil(pergunta_id, df_entidades_levantamentos, title=None):
     filtro_pergunta = df_respostas[(df_respostas["pergunta_id"]==pergunta_id)][['resposta_levantamento_id','boolean_answer']]
 
     df_resposta = pd.merge(
@@ -39,7 +51,8 @@ def grafico_mapa_brasil(pergunta_id, df_entidades_levantamentos):
         featureidkey="properties.sigla",  # Códigos ISO no GeoJSON
         color="boolean_answer",
         color_discrete_map={"Sim": sim, "Não": nao, "Não Respondeu": cinza} ,
-        labels={"boolean_answer": "Resposta"},
+        labels={"boolean_answer": "Resposta", "uf": "UF"},
+        title=title,
         hover_name="uf",
     )
 
@@ -50,7 +63,7 @@ def grafico_mapa_brasil(pergunta_id, df_entidades_levantamentos):
 
     fig_mapa.update_layout(
         paper_bgcolor="rgba(0,0,0,0)",  # Fundo do gráfico
-        geo=dict(bgcolor="rgba(0,0,0,0)")  # Fundo do mapa
+        geo=dict(bgcolor="rgba(0,0,0,0)"),  # Fundo do mapa
     )
 
     return fig_mapa
@@ -59,7 +72,7 @@ def grafico_mapa_brasil(pergunta_id, df_entidades_levantamentos):
 ######################################
 # Função que cria gráfico de pizza 
 ######################################
-def grafico_pizza(pergunta_id, df_entidades_levantamentos, hole=None):
+def grafico_pizza(pergunta_id, df_entidades_levantamentos, title=None, hole=None):
     filtro_pergunta = df_respostas[(df_respostas["pergunta_id"]==pergunta_id)][['resposta_levantamento_id','boolean_answer']]
 
     df_resposta = pd.merge(
@@ -76,7 +89,7 @@ def grafico_pizza(pergunta_id, df_entidades_levantamentos, hole=None):
         values='Quantidade', 
         names='Resposta',
         color='Resposta',
-        #title="Plano Estadual possui alinhamento com o Plano Nacional de Enfrentamento da Violência contra Crianças e Adolescentes?",
+        title=title,
         color_discrete_map={'Sim': sim, 'Não': nao},
         hole=hole
     )
@@ -89,7 +102,7 @@ def grafico_pizza(pergunta_id, df_entidades_levantamentos, hole=None):
     return fig_resposta
 
 
-def grafico_pizza_com_legenda(pergunta_id, df_entidades_levantamentos, hole=None):
+def grafico_pizza_com_legenda(pergunta_id, df_entidades_levantamentos, title=None, hole=None):
     filtro_pergunta = df_respostas[(df_respostas["pergunta_id"]==pergunta_id)]
 
     df_resposta = pd.merge(
@@ -123,8 +136,8 @@ def grafico_pizza_com_legenda(pergunta_id, df_entidades_levantamentos, hole=None
         values='Quantidade', 
         names='Resposta',
         color='Resposta',
-        #title="Plano Estadual possui alinhamento com o Plano Nacional de Enfrentamento da Violência contra Crianças e Adolescentes?",
-        
+        title=title,
+        color_discrete_map={"ALTO RISCO": sim, "MÉDIO RISCO": nao, "BAIXO RISCO": cinza} ,
         hole=hole
     )
     fig_resposta.update_traces(textposition='inside', textinfo='percent+value')
@@ -139,7 +152,7 @@ def grafico_pizza_com_legenda(pergunta_id, df_entidades_levantamentos, hole=None
 ######################################
 # Função que cria gráfico de barra horizontal
 ######################################
-def grafico_barra_horizontal(pergunta_id, df_entidades_levantamentos):
+def grafico_barra_horizontal(pergunta_id, df_entidades_levantamentos, title=None, palavras=3, height=None):
     filtro_pergunta = df_respostas[(df_respostas["pergunta_id"]==pergunta_id)]
 
     df_resposta = pd.merge(
@@ -154,8 +167,12 @@ def grafico_barra_horizontal(pergunta_id, df_entidades_levantamentos):
         df_resposta, df_opcoes, left_on="opcao_id", right_on="id", how="inner"
     )
 
-    count_df_resposta = df_resposta['texto'].value_counts().reset_index()
-    count_df_resposta.columns = ['texto', 'total']
+    # Aplicar quebra de linha nas categorias
+    df_resposta['texto_quebrado'] = df_resposta['texto'].apply(lambda x: quebrar_texto(x, palavras))
+
+    count_df_resposta = df_resposta['texto_quebrado'].value_counts().reset_index()
+
+    count_df_resposta.columns = ['texto_quebrado', 'total']
 
     # Ordenar os dados pelo total
     count_df_resposta = count_df_resposta.sort_values('total', ascending=True)
@@ -164,12 +181,13 @@ def grafico_barra_horizontal(pergunta_id, df_entidades_levantamentos):
     fig_resposta = px.bar(
         count_df_resposta,
         x='total',
-        y='texto',
+        y='texto_quebrado',
         orientation='h',
         text='total',
-        #title='Nos planos estaduais existentes foram estabelecidos',
+        title=title,
         color_discrete_sequence=[nao, sim],
         range_x=[0, 20],
+        height=height
     )
 
     fig_resposta.update_layout(
@@ -182,8 +200,7 @@ def grafico_barra_horizontal(pergunta_id, df_entidades_levantamentos):
     fig_resposta.update_traces(
         textfont_size=14, 
         textangle=0, 
-        cliponaxis=False
+        cliponaxis=False,
         )
-
 
     return fig_resposta
