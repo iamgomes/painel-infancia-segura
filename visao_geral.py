@@ -125,7 +125,23 @@ st.download_button(
 )
 
 st.markdown('''
----
-
 Esta é uma oportunidade de refletirmos e agirmos para mudar a realidade das nossas crianças e adolescentes. A responsabilidade é de todos nós!
+
+---
 ''')
+
+col1, col2, col3, col4 = st.columns([1,1,2,2], gap="large", vertical_alignment="center")
+
+with col1:
+  st.markdown("**Realização**")
+  st.image("assets/logo_atricon.svg", width=150)
+
+with col2:
+   st.markdown("**Parceiros**")
+   st.image("assets/logo_unicef.svg", width=135)
+
+with col3:
+  st.image("assets/logo_coalizao.svg", width=350)
+
+with col4:
+  st.image("assets/logo_FBSP.svg", width=250)

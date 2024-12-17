@@ -1,6 +1,7 @@
 import streamlit as st
 from import_data import *
 from graficos import *
+import textwrap
 
 # Título da Página
 st.title("📋 Governança")
@@ -28,20 +29,21 @@ with col1:
         titulo_2 = "Estados que possuem Plano Estadual ancorado em algum instrumento normativo"
         st.plotly_chart(grafico_pizza(2, df_entidades_levantamentos, titulo_2), key="resposta_2", use_container_width=True)
 
-        titulo_4 = "Estados com plano publicado em veículo oficial e disponível <br>para sociedade"
+        titulo_4 = "Estados com plano publicado em veículo oficial e disponível para sociedade"
         st.plotly_chart(grafico_pizza(4, df_entidades_levantamentos, titulo_4, .4), key="resposta_4", use_container_width=True)
 
 with col2:
-        titulo_3 = "Estados com Plano Estadual alinhado com o Plano Nacional de <br>enfrentamento da violência contra crianças e adolescentes"
+        titulo_3 = "Estados com Plano Estadual alinhado com o Plano Nacional de enfrentamento da violência contra crianças e adolescentes"
+        titulo_3 = textwrap.shorten(titulo_3, width=80)
         st.plotly_chart(grafico_pizza(3, df_entidades_levantamentos, titulo_3, .4), key="resposta_3", use_container_width=True)
 
-        titulo_7 = "Estados nos quais houve a instituição de ciclos periódicos de <br>avaliação e monitoramento do plano estadual"
+        titulo_7 = "Estados nos quais houve a instituição de ciclos periódicos de avaliação e monitoramento do plano estadual"
         st.plotly_chart(grafico_pizza(7, df_entidades_levantamentos, titulo_7), key="resposta_7", use_container_width=True)
 
 col3, col4 = st.columns(2, gap="large", vertical_alignment="top")
 
 with col3:
-    titulo_5 = "Ações realizadas no processo de construção dos planos nos <br>Estados que possuem Plano Estadual"
+    titulo_5 = "Ações realizadas no processo de construção dos planos nos Estados que possuem Plano Estadual"
     st.plotly_chart(grafico_barra_horizontal(5, df_entidades_levantamentos, titulo_5), key="resposta_5", use_container_width=True)
 
 with col4:
