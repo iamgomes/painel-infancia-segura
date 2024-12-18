@@ -7,9 +7,10 @@ textColor = "#000000"           # Cor do texto
 font = "sans serif"             # Fonte (opções: 'sans serif', 'serif', 'monospace')
 
 [server]
-headless = true                 # Executa o Streamlit em modo headless
-port = 8501                     # Porta padrão
-enableCORS = false              # Habilita/desabilita CORS
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+port = 8501
 
 [ui]
 hide_streamlit_marker = true    # Esconde o botão "Made with Streamlit"

@@ -4,9 +4,9 @@ from graficos import *
 
 st.title("🌐 Visão Geral")
 
-st.markdown('''
-### **Levantamento das Ações e Políticas Públicas na Prevenção e Enfrentamento da Violência contra Crianças e Adolescentes**
+st.header("Levantamento das Ações e Políticas Públicas na Prevenção e Enfrentamento da Violência contra Crianças e Adolescentes")
 
+st.markdown('''
 Com o objetivo de fortalecer a legislação que assegura e protege os direitos das crianças e adolescentes, especialmente aqueles expostos à violência, foi instituída a **Lei nº 13.431/2017**, regulamentada pelo **Decreto nº 9.603/2018**. 
 
 Essa legislação organiza o **Sistema de Garantias de Direitos para Crianças e Adolescentes Vítimas ou Testemunhas de Violência (SGDCA)**, estabelecendo procedimentos que asseguram um atendimento especializado e integrado, prevenindo a **revitimização** e promovendo a **proteção integral**.
@@ -130,7 +130,7 @@ Esta é uma oportunidade de refletirmos e agirmos para mudar a realidade das nos
 ---
 ''')
 
-esquerda, direita = st.columns([1,5])
+esquerda, direita = st.columns([1,5], vertical_alignment="top")
 
 with esquerda:
   st.markdown("**Realização**")
@@ -142,14 +142,14 @@ with direita:
 col1, col2, col3, col4 = st.columns([1,1,2,2], gap="medium", vertical_alignment="center")
 
 with col1:
-  st.image("assets/logo_atricon.svg", width=150)
+  st.image("assets/logo_atricon.svg", width=117)
 
 with col2:
   
-  st.image("assets/logo_unicef.svg", width=135)
+  st.image("assets/logo_unicef.svg", width=100)
 
 with col3:
-  st.image("assets/logo_coalizao.svg", width=350)
+  st.image("assets/logo_coalizao.svg", width=300)
 
 with col4:
-  st.image("assets/logo_FBSP.svg", width=250)
+  st.image("assets/logo_FBSP.svg", width=200)
