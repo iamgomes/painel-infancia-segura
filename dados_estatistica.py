@@ -40,12 +40,8 @@ with col4:
     st.plotly_chart(grafico_pizza(77, df_entidades_levantamentos, titulo_77, .4), key="resposta_77", use_container_width=True)
 
 
-col5, col6 = st.columns(2, gap="large", vertical_alignment="top")
+titulo_80 = "Estados em que os órgãos do SGDCA realizam o mapeamento das ocorrências das formas de violência contra crianças e adolescentes"
+st.plotly_chart(grafico_pizza(80, df_entidades_levantamentos, titulo_80), key="resposta_80", use_container_width=True)
 
-with col5:
-    titulo_80 = "Estados em que os órgãos do SGDCA realizam o mapeamento das ocorrências das formas de violência contra crianças e adolescentes"
-    st.plotly_chart(grafico_pizza(80, df_entidades_levantamentos, titulo_80), key="resposta_80", use_container_width=True)
-
-with col6:
-    titulo_83 = "Qual o risco da criança e adolescente sofrer revitimização?"
-    st.plotly_chart(grafico_pizza_com_legenda(83, df_entidades_levantamentos, titulo_83, .4), key="resposta_83", use_container_width=True)
+titulo_83 = "Qual o risco da criança e adolescente sofrer revitimização?"
+st.plotly_chart(grafico_pizza_com_legenda(83, df_entidades_levantamentos, titulo_83, .4), key="resposta_83", use_container_width=True)

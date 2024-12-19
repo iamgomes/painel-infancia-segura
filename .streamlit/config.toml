@@ -11,7 +11,3 @@ headless = true
 enableCORS = false
 enableXsrfProtection = false
 port = 8501
-
-[ui]
-hide_streamlit_marker = true    # Esconde o botão "Made with Streamlit"
-hide_menu_items = true          # Esconde o menu de configurações (três pontos)

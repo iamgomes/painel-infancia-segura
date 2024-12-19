@@ -1,6 +1,5 @@
 import streamlit as st
-import pandas as pd
-
+import streamlit.components.v1 as components
 
 # Configuração da página Streamlit
 st.set_page_config(
@@ -9,20 +8,7 @@ st.set_page_config(
     page_icon="assets/icon_logo_infancia_segura.svg",
 )
 
-# Google Analytics
-st.html('''
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GNQWBVJ0V1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-GNQWBVJ0V1');
-</script>
-''')
-
-with open('style.css') as f:
+with open('styles.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 st.logo(
